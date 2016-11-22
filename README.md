@@ -230,7 +230,7 @@ onSubmit(){
 				<form onSubmit={this.onSubmit}>
 					<label>Enter Band: </label>
 					<input />
-					<button type"submit">Submit</button>
+					<button type="submit">Submit</button>
 				</form>
 			</div>
 		)
@@ -444,3 +444,4 @@ NOTE: If you're thinking "why should we re-render the whole application? Shouldn
 React uses something called **the virtual DOM** to keep track of changes that have been made to state and the impact that those changes have on DOM. React will go through some super fast calculations, comparing the virtual DOM, which will re-render in its entirety, to the *actual* DOM, and then *only re-render the portion of the actual DOM that has actually changed*! That is super cool, in case that wasn't clear. We are very impressed. 
 
 That's it! You've done it! Your hot new band display app is ready for the world!
+<p class='util--hide'>View <a href='https://learn.co/lessons/components-actions-and-stores-lab'>Components Actions And Stores Lab</a> on Learn.co and start learning to code for free.</p>
