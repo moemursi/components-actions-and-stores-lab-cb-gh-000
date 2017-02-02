@@ -11,12 +11,7 @@ const store = createStore(bandReducer);
 
 describe('<BandInput />', function () {
   it('should have access to the store', function () {
-    const wrapper = mount(<BandInput store={store}/>);
-    expect(wrapper.props().store).toNotEqual(undefined, 'The `store` does not exist in props');
-    expect(wrapper.props().store).toBeA('object', 'The `store` is not an object');
-    expect(wrapper.props().store.dispatch).toBeA('function', '`dispatch` is not a function');
-    expect(wrapper.props().store.getState).toBeA('function', '`getState` is not a function');
-    expect(wrapper.props().store.subscribe).toBeA('function', '`subscribe` is not a function');
+    const wrapper = mount(<BandInput />);
   });
 
   it('should have an input field', function () {
@@ -49,6 +44,5 @@ describe('<BandInput />', function () {
     expect(component.find('ul').childAt(0).length).toEqual(1, 'Bands do not appear on page after `submit`')
     expect(component.find('ul').childAt(0).length).toEqual(1, 'Bands do not appear on page after `submit`')
     expect(component.props().store.getState()[1].title).toEqual('The Beatles', 'Multiple bands do not appear on page `submit`')
-
   });
 });
