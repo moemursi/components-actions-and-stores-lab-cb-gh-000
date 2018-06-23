@@ -1,4 +1,4 @@
-# Components, Actions, and Stores
+#jj Components, Actions, and Stores
 
 ## Overview
 In this codealong we will build out a simple band listing application, which will demonstrate user interaction with flux.
